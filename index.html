@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!-- Define que é um arquivo HTML -->
+<html lang="pt-br"> <!-- É dessa maneira que o navegador sugere tradução da página-->
+
+<head> <!-- Cabeçalho, não visualizável na página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinoda</title> <!-- É o que aparece na aba do navegador  -->
+</head> <!-- Fecha cabeçalho -->
+
+<body> <!-- Irá aparecer no corpo da página -->
+
+    <header> <!-- Cabeçalho visual da página -->
+        <h1>Shinoda</h1><!-- Título maior da página -->
+        <nav> <!-- Criação de menú, vem de navegação -->
+            <ul> <!-- Lista não ordenada de links para o menú -->
+                <li><a href="#sobre"> Sobre mim</a></li> <!-- Link interno -->
+                <li><a href="#projeto">Projetos</a></li> <!-- Link interno -->            
+                <li><a href="#contato">Contato</a></li> <!-- Link interno -->
+                <li><a href="https://google.com.br/" target="_blank">Google</a></li> <!-- Link externo -->
+            </ul>
+        </nav> 
+    </header> <!-- Fim do cabeçalho visual da página -->
+
+    <section id="sobre"> <!-- Cria uma nova sessão -->
+        <h2>Sobre mim</h2> <!-- Adiciona um título menor que o anterior -->
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQH_L81uYvEpLw/profile-displayphoto-crop_800_800/B4DZkGJaT3GQAI-/0/1756744754982?e=1773273600&v=beta&t=VesREeTYR5HjW2wiaw-PuoeWHxu51lyLzjCMi4g1CdM" alt="Imagem de foto de perfil" width="150px" title="Imagem de perfil de Adriana"> <!-- Alt é útil caso ocorra algum problema com a imagem, caso tenha esse problema ele trará a mensagem escrita -->
+        <article> <!-- Cria texto -->
+            <p> <!-- Cria parágrafo -->
+                Experiência de 15 anos em tecnologia da informação e comunicação com atuação em projetos de hardware, software e serviços. Visão orientada à solução com foco orientado para resultado.
+            </p>
+        </article>
+    </section> <!-- Finaliza essa sessão -->
+
+    <aside> <!-- Para criar uma nova parte do site -->
+        <h3>Habilidades</h3><!-- Para criar novo título -->
+            <ul> <!-- Lista não ordenada -->
+                <li>HTML</li><!-- Item da lista -->
+                <li>CSS</li><!-- Item da lista -->
+                <li>JavaScript</li><!-- Item da lista -->
+            </ul>
+    </aside>
+
+    <section id="projeto"> <!-- Cria uma nova sessão para Projetos -->
+        <h2>Projetos</h2> <!-- Adiciona um título menor que o anterior -->
+        <article>
+            <h3>Portfólio</h3>
+            <p>Este foi o primeiro site que desenvolvi estudando front-end no SCTec, carreira de Desenvolvimento de Software.</p>
+        </article>
+    </section>
+
+    <footer>Direitos reservados à Shinoda₢</footer> <!-- Cria rodapé da página -->
+        <section  id="contato">
+            <p>Precisando criar um site? Entre em contato conosco</p>
+            <address> <!-- Tag para colocar endereço --> 
+                E-mail: <a href="mailto:contato@contato.com.br">contato@contato.com.br</a> <!-- Cria ação de abrir o cliente de e-mail ao clicar no e-mail --> 
+                    <br> <!-- Para dar quebra de linha --> 
+                Telefone: <a href="tel:+5548996432636">(xx) xxxxx-xxxx</a> <!-- Cria ação de ao clicar sair discando --> 
+            </address>
+        </section>
+
+</body>
+
+</html>
