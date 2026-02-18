@@ -56,6 +56,38 @@
                     <br> <!-- Para dar quebra de linha --> 
                 Telefone: <a href="tel:+5548996432636">(xx) xxxxx-xxxx</a> <!-- Cria ação de ao clicar sair discando --> 
             </address>
+
+            <form action=""> <!-- Cria formulário -->
+                <label for="nome">Nome: </label> <!-- Fica ao lado do campo que será usado para digitar -->
+                <input type="text" id="nome" name="nome" required> <br><!-- Tipo texto, "required" = campo obrigatório -->
+
+                <label for="email">E-mail: </label> <!-- Fica ao lado do campo que será usado para digitar -->
+                <input type="email" id="email" name="email" required> <br><!-- Tipo e-mail já valida formato de e-mail, "required" = campo obrigatório -->
+
+                <label for="telefone">Telefone: </label> <!-- Fica ao lado do campo que será usado para digitar -->
+                <input type="tel" id="telefone" name="telefone"> <br><!-- Tipo e-mail já valida formato de telefone -->
+
+                <label for="assunto">Assunto: </label> <!-- Fica ao lado do campo que será usado para digitar -->
+                <select name="assunto" id="assunto"> <!-- Cria cx de seleção -->
+                    <option value="orcamento">Orçamento</option> <!-- Cria opção para seleção -->
+                    <option value="duvida">Dúvida</option> <!-- Cria opção para seleção -->
+                    <option value="outro">Outro</option>  <br><!-- Cria opção para seleção -->  
+                </select> <br>
+
+                <label for="mensagem" required>Mensagem: </label> <!-- Fica ao lado do campo que será usado para digitar -->
+                <!-- Cria cx de texto para digitar, "required" = campo obrigatório --> -->
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" required> 
+                </textarea> <br>
+
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao"> Se deseja ficar por dentro de nossas novidades, clique aqui. 
+                </label> <br>
+
+                <input type="submit" value="Enviar mensagem"> <!-- "submit" coleta todas as informações e as envia para o local a ser indicado --> <br>
+
+                <input type="date">
+
+            </form>
         </section>
 
 </body>
