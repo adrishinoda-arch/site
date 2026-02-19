@@ -86,6 +86,7 @@
                     <br> <!-- Para dar quebra de linha --> 
                 Telefone: <a href="tel:+5548996432636">(xx) xxxxx-xxxx</a> <!-- Cria ação de ao clicar sair discando --> 
             </address>
+
             <form action=""> <!-- Cria formulário -->
                 <label for="nome">Nome: </label> <!-- Fica ao lado do campo que será usado para digitar -->
                 <input type="text" id="nome" name="nome" required> <br><!-- Tipo texto, "required" = campo obrigatório -->
@@ -111,8 +112,47 @@
                 <label for="inscricao"> Se deseja ficar por dentro de nossas novidades, clique aqui. 
                 </label> <br>
 
-                <input type="submit" value="Enviar mensagem"> <!-- "submit" coleta todas as informações e as envia para o local a ser indicado --> <br>
-                <input type="date">
+                <input type="submit" value="Enviar mensagem"> <!-- "submit" coleta todas as informações e as envia para o local a ser indicado --> 
+                <input type="date"> 
+            </form> <br>
+
+            <form action="" id="candidatura"> <!-- Formulário do desafio -->
+                <label for="nome">Nome: </label> <!-- Fica ao lado do campo que será usado para digitar -->
+                <input type="text" id="nome" name="nome"> <br><!-- Tipo texto, "required" = campo obrigatório -->
+
+                <label for="email">E-mail: </label> <!-- Fica ao lado do campo que será usado para digitar -->
+                <input type="email" id="email" name="email"> <br><!-- Tipo e-mail já valida formato de e-mail, "required" = campo obrigatório -->
+
+                <label for="idade">Idade (anos): </label> <!-- Fica ao lado do campo que será usado para digitar -->
+                <input type="number" id="idade" name="idade"> <br><!-- Tipo e-mail já valida formato de e-mail, "required" = campo obrigatório -->
+
+                <label for="assunto">Assunto: </label> <!-- Fica ao lado do campo que será usado para digitar -->
+                <select name="assunto" id="assunto"> <!-- Cria cx de seleção -->
+                    <option value="matematica">Matemática</option> <!-- Cria opção para seleção -->
+                    <option value="portugues">Português</option> 
+                    <option value="biologia">Biologia</option>  
+                    <option value="ciencias">Ciências</option> 
+                    <option value="historia">História</option> 
+                    <option value="geografia">Geografia</option> 
+                    <option value="artes">Artes</option> <br>
+                </select> <br>
+
+                <label for="turno">Turno(s) disponível(is): </label> <!-- Fica ao lado do campo que será usado para digitar -->
+                <input type="text" id="turno" name="turno"> <br><!-- Tipo texto, "required" = campo obrigatório -->
+
+                <label for="escolaridade">Nível de escolaridade: </label> <!-- Fica ao lado do campo que será usado para digitar -->
+                <select name="escolaridade" id="escolaridade"> <!-- Cria cx de seleção -->
+                    <option value="superior">Ensino Superior Completo</option> <!-- Cria opção para seleção -->
+                    <option value="cursandoMestrado">Cursando Mestradop</option> 
+                    <option value="mestradoCompleto">Mestrado completo</option>  
+                    <option value="cursandoDoutorado">Cursando Doutorado</option> 
+                    <option value="doutoradoCompleto">Doutorado completo</option> <br>
+                </select> <br>
+
+                <label for="mensagem" required>Fale sobre si mesmo: </label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="20" required> 
+                </textarea> <br>
+
             </form>
         </section>
 
