@@ -48,6 +48,36 @@
         </article>
     </section>
 
+    <section id="habilidades"> <!-- Nova sessão para Habilidades, utilizando tabela -->
+        <h2>Habilidades e tecnologias</h2>
+        <table> <!-- Cria tabela -->
+            <thead> <!-- Cria cabeçalho da tabela -->
+                <tr><!-- Cria nova linha -->
+                    <th>Tecnologia</th> <!-- Cria nova coluna -->
+                    <th>Nível</th> <!-- Cria nova coluna -->
+                    <th>Descrição</th> <!-- Cria nova coluna -->
+                </tr> 
+            </thead>
+            <tbody> <!-- Cria corpo da tabela -->
+                <tr> <!-- Cria nova linha -->
+                    <td>HTML<td> <!-- Cria nova coluna, SEM NEGRITO -->
+                    <td>Iniciante<td> <!-- Cria nova coluna, SEM NEGRITO -->
+                    <td>Capaz de construir estruturas de páginas web semânticas e responsivas<td> <!-- Cria nova coluna, SEM NEGRITO -->
+                </tr>
+                <tr> <!-- Cria nova linha -->
+                    <td>CSS<td> <!-- Cria nova coluna, SEM NEGRITO -->
+                    <td>Intermediário<td> <!-- Cria nova coluna, SEM NEGRITO -->
+                    <td>Experiência com flexbox, grid e animações<td> <!-- Cria nova coluna, SEM NEGRITO -->
+                </tr>
+                <tr> <!-- Cria nova linha -->
+                    <td>JavaScript</td> <!-- Cria nova coluna, SEM NEGRITO -->
+                    <td>Básico</td> <!-- Cria nova coluna, SEM NEGRITO -->
+                    <td>Desenvolvimento de scripts do lado cliente para interações</td> <!-- Cria nova coluna SEM NEGRITO -->
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
     <footer>Direitos reservados à Shinoda₢</footer> <!-- Cria rodapé da página -->
         <section  id="contato">
             <p>Precisando criar um site? Entre em contato conosco</p>
@@ -56,7 +86,6 @@
                     <br> <!-- Para dar quebra de linha --> 
                 Telefone: <a href="tel:+5548996432636">(xx) xxxxx-xxxx</a> <!-- Cria ação de ao clicar sair discando --> 
             </address>
-
             <form action=""> <!-- Cria formulário -->
                 <label for="nome">Nome: </label> <!-- Fica ao lado do campo que será usado para digitar -->
                 <input type="text" id="nome" name="nome" required> <br><!-- Tipo texto, "required" = campo obrigatório -->
@@ -74,8 +103,7 @@
                     <option value="outro">Outro</option>  <br><!-- Cria opção para seleção -->  
                 </select> <br>
 
-                <label for="mensagem" required>Mensagem: </label> <!-- Fica ao lado do campo que será usado para digitar -->
-                <!-- Cria cx de texto para digitar, "required" = campo obrigatório --> -->
+                <label for="mensagem" required>Mensagem: </label>
                 <textarea name="mensagem" id="mensagem" cols="30" rows="10" required> 
                 </textarea> <br>
 
@@ -84,9 +112,7 @@
                 </label> <br>
 
                 <input type="submit" value="Enviar mensagem"> <!-- "submit" coleta todas as informações e as envia para o local a ser indicado --> <br>
-
                 <input type="date">
-
             </form>
         </section>
 
